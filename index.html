@@ -1,93 +1,86 @@
-<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
 
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-  <link href="https://htmlku.com/dariku/style.css" rel="stylesheet" type="text/css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"><link href="https://htmlku.com/menurutku/style.css" rel="stylesheet">
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
 <head>
-<title>Script HTML Pesan Dariku - Cpm_Jhon</title>
-</head>
-<body>
-	
-   <div id="bodyblur">
-     <!-- Wallpaper / Background --><img src="Seoul.jpeg" id="wallpaper"/>
-   </div>
+    <title>S.id/menurutku - Aku Punya Sesuatu Nih..</title>
+    <meta name="description" content="HTML Cpm_Jhon Coding">
+    <!-- 
+  Made with love by feeldream!
   
-  <div class="kumpulanstiker">
-         <!-- Stiker untuk Konten -->
-         <img src="https://htmlku.com/0/panda/pusn.gif" id="fotoakhir1"/>
-         <img src="https://feeldreams.github.io/mndkat.gif" id="fotoakhir2"/>
-         <img src="https://feeldreams.github.io/g5.gif" id="fotoakhir3"/>
-         <img src="https://htmlku.com/0/panda/gemoy.gif" id="fotoakhir4"/>
-  </div>
-
-   <div id='Content'>
-   	
-     <div id="suratin" onClick="memulai();audio.play();">
-       <!-- Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
-     </div>
-     <p id="ket">Klik Suratnya!</p>
-   
-     <div><!-- Foto Akhir --><img src="https://feeldreams.github.io/bber.gif" id="fotoakhir" /></div>
-     <div><blockquote id='bq'>
-       <p id="kalimat"></p>
-       <p id="kalimatc"></p>
-     </blockquote></div>
-   
-     <!-- Tombol Kirim Pesan -->
-     <div id="Tombol">
-       <a onClick="sjawab()">
-         <b>💌 Balas</b>
-       </a>
-     </div>
+    https://feeldream.id
      
-   </div>
+  Thanks to all <3
+-->
+</head>
 
-<div class='sticky-ad' id='sticky-ad'>
- <div class='adB'><a rel="dofollow" href='https://www.instagram.com/cpm_jhon?igsh=MTNuMnE3aXlxcGxx'>Sosial Media Owner!</a></div>
-<button aria-label='Close this ad' class='sticky-ad-close-button' onclick='hilangkan();'/>
-</div>
+<body>
 
-<script src="https://htmlku.com/dariku/script.js"></script>
+    <!-- Ganti Audio di sini -->
+    <audio src="https://feeldreams.github.io/maimuna.mp3" id="linkmp3" class="sembunyi"></audio>
 
-<!-- Ganti Kata², Foto, Lagu di bawah ya
-1) Upload foto ke https://postimages.org
-     buat dapetin linknya
-2) Ganti Lagu Upload ke replit.com
-     atau bisa juga ke mailboxdrive.com -->
+    <div id="bodyblur">
+        <!-- Wallpaper --><img src="https://feeldreams.github.io/pics/awan3.jpg" id="wallpaper" />
+        <div id="beneranblur"></div>
+    </div>
 
-<script type="text/javascript">
-       async function jawab(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+    <div id='Content'>
 
-       async function pertama(){
-         audio = new Audio('https://feeldreams.github.io/almostday.mp3');setTimeout(showDiv,100);
-       } pertama();
-	
-       
-       async function pesan(){
-             	await swalst.fire({
-                  title: 'Heyy kamuuu! 😍', 
-                  imageUrl: '' + fotoakhir1.src,
-                  });   	
-                 await swalst.fire({
-                  title: 'Semangat Jalani Harinya yaa 🥳',
-                  imageUrl: '' + fotoakhir2.src,
-                  });
-                 await swalst.fire({
-                  title: 'Tetap Jaga Kesehatan yaa 🫶',
-                  imageUrl: '' + fotoakhir3.src,
-                  });
-                 await swalst.fire({
-                  title: 'Dan Jangan Telat Makan 😍',
-                  imageUrl: '' + fotoakhir4.src,
-                  });
-                  
-                  katangetik = "<b>Terakhir, aku cuma mau bilang:</b><br><br><i>im very lucky to have you!</i> kamu ngga<br>boleh sedih yaa karena aku akan selalu di sampingmu<br>Dan kamu gak usah takut aku ngga bakal pergi dari kamu yaa...<br>aku tenang, pokoknya aku suka<br>semuanya tentang kamu.<br><br>Tetaplah menjadi tujuanku yaa, jangan<br>menjauh, jangan pergi, dan jangan<br>berpindah ke lain hati, aku sayang<br>kamu selaluuu <333333";
-                  katangetik2 = "<i>i love uuuu 💞🤍💝❣️</i>";
-                  
-                  pesanwhatsapp = "ilvyou too 💞🤍💝❣️";
-                 setTimeout(kpemb,200);
-            }
-</script>
+        <div id="loveIn">
+            <!-- Tombol LOVE --><label class="lovein">&#10084;</label>
+        </div>
+        <p id="ket">Sentuh LOVEnya!</p>
+
+        <div class="kumpulanstiker">
+            <!-- Stiker untuk Konten -->
+            <img src="https://feeldreams.github.io/pandapanah.gif" id="fotostiker" />
+            <img src="https://feeldreams.github.io/bunga.gif" id="fotostiker1" />
+            <img src="https://feeldreams.github.io/pusn.gif" id="fotostiker2" />
+            <img src="https://feeldreams.github.io/gumush.gif" id="fotostiker3" />
+            <img src="https://feeldreams.github.io/g5.gif" id="fotostiker4" />
+            <img src="https://feeldreams.github.io/mndkat.gif" id="fotostiker5" />
+            <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker6" />
+        </div>
+
+        <p id="halo" class="halo"></p>
+
+        <div>
+            <blockquote id='bq' data-text=''>
+
+                <p id="kalimat">Aku Punya Sesuatu Nih 🤣❤️</p>
+                <p id="kalimatb"></p>
+
+                <p id="pesan1">Klik 4 LOVE ini! 🫣❤️</p>
+                <div id="kolombaru">
+                    <li id="lv1">❤️</li>
+                    <li id="lv2">❤️</li>
+                    <li id="lv3">❤️</li>
+                    <li id="lv4">❤️</li>
+                </div>
+
+                <p id="pesan2">Tunggu yaa 😋</p>
+                <p id="pesan3">Sekarang Aku Mau Bilang..</p>
+                <p id="pesan4" class="sty2">Menurut <span class='kuning'>biologi</span>, kamu<br>adalah 7% darah..</p>
+                <p id="pesan5" class="sty2">Menurut <span class='kuning'>kimia</span>, kamu<br>adalah 70% air..</p>
+                <p id="pesan6" class="sty2">Menurut <span class='kuning'>fisika</span>, kamu<br>adalah 99% ruang hampa..</p>
+                <p id="pesan7" class="sty2 left">Tapi menurut aku, <span class='kuning'>kamu</span><br>adalah <span class='merahmuda'>1000%</span> milikku,<br>sayangku, pacarku, <br>maniskuuuu 🫣😍🫶</p>
+                <p id="pesan8" class="sty2 left"><b>I love youuuu 💐</b></p>
+
+                <!-- Tombol Lanjut -->
+                <p id="opsL">Klik untuk Lanjut</p>
+            </blockquote>
+        </div>
+
+    </div>
+
+    <script src="https://htmlku.com/menurutku/script.js"></script>
 </body>
 </html>
